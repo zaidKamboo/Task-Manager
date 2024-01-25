@@ -1,0 +1,353 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar{
+  width:8px;
+  background-color: transparent;
+  /* border:2px solid red; */
+}
+::-webkit-scrollbar-thumb{
+  height: 5vh;
+  border-radius: 100vw;
+  /* border: .1px solid #00ffd5; */
+  background-color: transparent;
+  background-color: gray;
+}
+::-webkit-scrollbar-thumb:hover{
+  cursor: pointer;
+}
+
+/* MOBILE CSS. */
+@media only screen and (max-width : 440px) and (min-width: 189px) {
+  
+}
+/* TABLET CSS. */
+@media only screen and (min-width: 441px) and (max-width:1300px) {
+
+}
+/* DESTOP CSS. */
+@media only screen and (min-width: 800px) {
+  .alertContainer{
+    position: absolute;
+    z-index: 6;
+    width: 100vw;
+    top: 0;
+    background-color: rgba(12, 31, 13, 0.37);
+    height: 6.9vh;
+    display: flex;
+    backdrop-filter: blur(20px);
+    justify-content: space-between;
+    color: white;
+  }
+  .cross{
+    background-color: transparent;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    padding: 3px;
+    margin-right: 1vw;
+    color: white;
+  }
+  .cross:hover{
+    background-color: #151b24;color: white;
+    text-shadow: 10px 10px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+  .alertBody{
+    /* background-color: white; */
+    /* border: 1px solid red; */
+    height: 5vh;
+    margin-top: .5vw;
+    font-size: large;
+    padding: .3vw .9vw;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  .navbar-container{
+    height: 6.9vh;
+    min-height: 6.9vh;
+    display: flex;
+    justify-content: center;
+    background-color: #0D1117;
+    color: white;
+    border-bottom:1px solid white;
+  }
+  .navList{
+    display: flex;
+    list-style-type: none;
+    /* border:2px solid goldenrod; */
+    font-weight: bold;
+    margin:  0;
+    width: 100%;
+  }
+  .navList a{
+    color: white;
+    font-weight: bold;
+  }
+  .navList li:nth-child(1){
+    position:absolute ;
+    left: 0;
+    top: .4vw;
+    margin-left: 1vw;
+    display: flex;
+    justify-content: center;
+  }
+  .navList li:nth-child(2){
+    margin-left: 3vw;
+    margin-top:.4vw;
+
+    display: flex;
+    justify-content: center;
+  }
+  .navList li:nth-child(3){
+     position:absolute ;
+     margin-right: 7vw;
+     top: .4vw;
+     display: flex;
+     justify-content: center;
+     right: 0;
+    }
+  .navList li:nth-child(4){
+    position:absolute ;
+    margin-right: 1vw;
+    top: .4vw;
+    display: flex;
+    justify-content: center;
+    right: 0;
+  }
+  
+  .navList li{
+    font-size: 1.5vw;
+    font-family: sans-serif;
+    padding: .45vh .3vw;
+    margin: auto 0;
+  }
+  .navLinks{
+    padding: 0 .4vw;
+  }
+  .navLinks:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+  }
+  
+  .formContainer{
+    background:conic-gradient(darkgray,black,black,darkgray,black);
+    width: 99.99vw;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+  }
+  .formDiv{
+    margin-top: 10vh;
+    width: 40%;
+    display: flex;
+    backdrop-filter: blur(20px);
+    flex-direction:column;
+    background-color: transparent;
+    height: fit-content;
+    min-height: 55%;
+    border: 2px solid white;
+    color: white;
+    padding-bottom:1.5vw ;
+    border-radius: 1vw;
+  }
+  .inputs{
+    background-color: transparent;
+    margin: 1.3vh 3vh;
+    padding: .5vw;
+    color: white;
+    border:1px solid rgb(180, 255, 255);
+  }
+  ::-webkit-input-placeholder{
+    color:white;
+    font-size: 1.2vw;
+    
+  }
+  .labels{
+    margin: 1vh 3vh;
+    padding: .5vw;
+    font-size: 1.5vw;
+  }
+  .btnSub{
+    background-color: aqua;
+    color: black;
+    font-size: 1.18vw;
+    font-weight: bold;
+    padding: 1vh 1vw;
+    border-radius:10px;
+    text-align: center;
+    justify-content: center;
+    width: fit-content;
+    transition: all .1s ease-in-out;
+    border: none;
+  }
+  .btnSub:hover{
+    border: none;
+    font-weight: bold;
+    padding: 1vh 1vw;
+    cursor: pointer;
+    color: aqua;
+    background-color: black;
+    border-radius:10px;
+  }
+  .inputs[type="date"] {
+    background-color: transparent;
+    margin: 1.3vh 3vh;
+    padding: .5vw;
+    color: white;
+    border: 1px solid rgb(180, 255, 255);
+}
+
+ .inputs[type="date"]::-webkit-calendar-picker-indicator {
+    /* Style the date picker dropdown arrow */
+    filter: invert(1);
+    width: 1.2vw;
+    height: 1.2vw;
+    margin-left: 5px;
+ }
+
+ .dashboard-container{
+  /* border: 2px solid red; */
+  /* background-color: rgba(0, 255, 179, 0.226); */
+  height: 100%;
+  background-color:  #151b24;
+  width: 90vw;
+  min-height: 86.46vh;
+  height: 86.46vh;
+  /* height: fit-content; */
+}
+  .DCheader{
+    display: flex;
+    justify-content: center;
+    color: white;
+
+  }
+  .DCheader h1{
+    text-align: center;
+  margin-top: 20%;
+  font-size: 3.3vw;
+    width: 90vw;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+  .documentsContainer{
+    background:conic-gradient(rgb(66, 66, 66),black,black,rgb(46, 45, 45),black);width: 100vw;
+    min-height :86.46vh;
+    /* height: 86.46vh; */
+    overflow-y: auto;
+    height :fit-content;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card{
+    width: 19.8%;
+    background-color: transparent;
+    border-radius: 15px;
+    backdrop-filter: blur(70px);
+    color:white;
+    /* width: 20%; */
+    border: 1px solid whitesmoke;
+    margin: 2.5vw;
+    height: 40vh;
+  }
+  .cardTitle{
+    font-size: 1.8vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 1.3vw;
+  }
+  .cardContent{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 1.3vw;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .btnCons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: yellow; */
+    height: 5vh;
+    /* margin-top: 5vw; */
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 4vh;
+  }
+  .dlt{
+    background-color: rgb(255, 16, 16);
+    padding: 5px ;
+    font-size: large;
+    width: fit-content;
+    color: white;
+    /* background-color: transparent; */
+    border: none;
+    /* border: 1px solid; */
+    border-radius: 8px;
+  }
+  .edit{
+    background-color: rgb(27, 133, 255);
+    padding: 4px 14px;
+    font-size: large;
+    width: fit-content;
+    color: white;
+    /* background-color: transparent; */
+    border: none;
+    /* border: 1px solid; */
+    border-radius: 8px;
+  }
+  .dlt:hover{
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+  }
+  .edit:hover{
+    color: whitesmoke;
+    cursor: pointer;
+    background-color: rgb(0, 119, 255);
+  }
+  .dueDate{
+    margin-left:1.3vw;
+  }
+
+  .link{
+    text-decoration: none;
+    font-size: 1.18vw;
+  }
+  .footer-container{
+    background-color: #0D1117;
+    color: white;
+    border-top:1px solid white;
+    width: 100%;
+    height: 6.4vh;
+    position: absolute;
+    bottom: 0;
+  }
+}
