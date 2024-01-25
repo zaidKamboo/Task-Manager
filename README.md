@@ -46,7 +46,6 @@ git clone https://github.com/zaidKamboo/Task-Manager.git
 cd Task-Manager
 npm i
 npm run dev
-Then open [http://localhost:5173/](http://localhost:5173/) on your browser.
 ```
 Then open [http://localhost:5173/](http://localhost:5173/) on your browser.
 
